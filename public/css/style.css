@@ -37,8 +37,10 @@ body {
 }
 
 nav {
-  display: inline;
-  position: relative;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -67,7 +69,7 @@ ul {
                1px 20px 30px rgba(16, 16, 16, 0.3),
                1px 25px 50px rgba(16, 16, 16, 0.2);
   color: var(--lightblue);
-  left: 50rem;
+  font-weight: bold;
 }
 
 .logout {
@@ -77,7 +79,41 @@ ul {
 }
 
 .login {
-  margin-top: 1rem;
+  text-align: center; 
+  margin-top: 1.5rem; 
+  position: relative; 
+  left: 58%; 
+  transform: translateX(-50%); 
+}
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(96, 105, 112, 0.7);
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-left: -3rem;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 1.3rem;
+  margin-top: -3rem;
+  font-weight: bold;
+}
+
+.email,
+.password {
+  font-size: 1.2rem;
 }
 
 .password {
@@ -107,5 +143,6 @@ ul {
 }
 
 form {
+  position: relative;
   align-items: center;
 }
