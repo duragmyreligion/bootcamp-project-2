@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { User, Project } = require('../models');
+const { User, Forum } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
   try {
-    const projectData = await Project.findAll({
+    const forumData = await Forum.findAll({
       include: [
         {
             model: User,
@@ -13,10 +13,10 @@ router.get('/', withAuth, async (req, res) => {
       ]
     });
 
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const forums = forumData.map((forum) => forumt.get({ plain: true }));
 
-    res.render('homepage', {
-      projects,
+    res.render('blog_content', {
+      forums,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -24,9 +24,9 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/project/:id', withAuth, async (req, res) => {
+router.get('/forum/:id', withAuth, async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id,{
+    const forumData = await Forum.findByPk(req.params.id,{
       include: [
         {
             model: User,
@@ -35,10 +35,10 @@ router.get('/project/:id', withAuth, async (req, res) => {
       ]
     });
 
-    const projects = projectData.get({ plain: true });
+    const forums = forumData.get({ plain: true });
 
-    res.render('project', {
-      ...projects,
+    res.render('forum', {
+      ...forums,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -46,16 +46,16 @@ router.get('/project/:id', withAuth, async (req, res) => {
   }
 });
 
-router.get('/new_post', withAuth, async (req, res) => {
+router.get('/blog_new_post', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id,{
       attributes: { exlude: ['password'] },
-      include: [ { model: Project }]
+      include: [ { model: Forum }]
     });
 
     const user = userData.get({ plain: true });
 
-    res.render('new_post', {
+    res.render('blog_new_post', {
       ...user,
       logged_in: true,
     });

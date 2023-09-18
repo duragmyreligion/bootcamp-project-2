@@ -8,35 +8,35 @@
   <div class="col-md-6">
     <h3>Add a new post:</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-forum-form">
       <div class="form-group">
-        <label for="project-name">Title:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="forum-name">Title:</label>
+        <input class="form-input" type="text" id="forum-name" name="forum-name" />
       </div>
       <div class="form-group">
-        <label for="project-name">Name of game:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="forum-name">Name of game:</label>
+        <input class="form-input" type="text" id="forum-name" name="forum-name" />
       </div>
       <div class="form-group">
-        <label for="project-desc">Description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="forum-desc">Description:</label>
+        <textarea class="form-input" id="forum-desc" name="forum-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
       </div>
     </form>
   </div>
-{{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
+{{#if forums.length}}
+  <div class="col-md-6 forum-list">
+    <h3>Current forums:</h3>
 
-    {{#each projects as |project|}}
+    {{#each forums as |forum|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a href="/forum/{{forum.id}}">{{forum.name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{forum.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
