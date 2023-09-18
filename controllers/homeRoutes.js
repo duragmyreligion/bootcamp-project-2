@@ -49,7 +49,7 @@ router.get('/forum/:id', withAuth, async (req, res) => {
 router.get('/blog_new_post', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id,{
-      attributes: { exlude: ['password'] },
+      attributes: { exclude: ['password'] },
       include: [ { model: Forum }]
     });
 
@@ -71,6 +71,15 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/register', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('register');
 });
 
 module.exports = router;

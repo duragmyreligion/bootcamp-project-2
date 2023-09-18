@@ -100,10 +100,6 @@ ul {
   font-weight: bold;
 }
 
-.form-group {
-  margin-left: -3rem;
-}
-
 .login-header {
   text-align: center;
   margin-bottom: 1.3rem;
@@ -111,19 +107,62 @@ ul {
   font-weight: bold;
 }
 
+.register {
+  text-align: center; 
+  margin-top: 1.5rem;
+  position: relative; 
+  left: 58%; 
+  transform: translateX(-50%); 
+}
+
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(96, 105, 112, 0.7);
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  font-weight: bold;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 1.3rem;
+  margin-top: -3rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-left: -3rem;
+}
+
 .email,
-.password {
+.password,
+.username {
   font-size: 1.2rem;
-}
-
-.password {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.email {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.account {
+  margin-top: 2rem;
+  margin-bottom: -4rem;
+}
+
+.inline-text {
+  display: inline; /* Display the text inline */
+  margin-right: 0.500rem; /* Add some spacing between text and link */
+  
+}
+
+.inline-link {
+  display: inline; /* Display the link inline */
+  text-decoration: none;
+  
 }
 
 .create-post {
