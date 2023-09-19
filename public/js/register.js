@@ -13,6 +13,10 @@ const registerUser = async (event) => {
       });
       if (response.ok) {
         document.location.replace('/');
+      }if (!response.ok) {
+        const errorMessage = await response.text(); // Get the error message from the response body
+        console.error(`HTTP Error: ${response.status} - ${errorMessage}`);
+        alert(`HTTP Error: ${response.status} - ${response.statusText}`);
       } else {
         alert(response.statusText);
       }
@@ -20,5 +24,5 @@ const registerUser = async (event) => {
   };
 
   document
-  .querySelector('.signup-form')
+  .querySelector('.register-form')
   .addEventListener('submit', registerUser);
