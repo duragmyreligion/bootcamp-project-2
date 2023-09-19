@@ -351,22 +351,23 @@ form {
 }
 
 .main-container {
-  width: 960px;
-  height: 700px;
+  width: 65rem;
+  height: 43.75rem;
   background-color: #0a314e;
   opacity: 0.4; 
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 3%;
-  border: 10px solid rgba(0, 0, 0, 0.9);
+  border: 0.625rem solid rgba(0, 0, 0, 0.9);
   z-index: -1;
 }
 
 .dropdown {
   position: relative;
-  top: -80px;
+  top: -4.1rem;
+  right: 5rem;
 }
 
 .dropdown-toggle {
@@ -377,23 +378,30 @@ form {
   border-radius: 0;
   background-color: #0a314e;
   opacity: 0.4;
-  width: 15.4%;
-  border: 5px solid rgba(0, 0, 0, 0.9);
-  height: 1415%;
+  width: 12.5rem;
+  border: 0.3125rem solid rgba(0, 0, 0, 0.9);
+  height: 40.5rem;
 }
 
 .dropdown-item {
   border-radius: 0;
+  height: 3rem;
 }
 
 .btn-secondary{
   background-color: #0a314e;
   opacity: 0.4;
-  border: 5px solid rgba(0, 0, 0, 0.9);
+  border: 0.3125rem solid rgba(0, 0, 0, 0.9);
 }
 
 .btn-secondary:hover{
   background-color: #0a314e;
   opacity: 0.4;
-  border: 5px solid rgb(27, 227, 250);
+  border: 0.3125rem solid rgb(27, 227, 250);
+}
+
+.btn-secondary:focus{
+  background-color:#061928;
+  opacity: 0.4;
+  border: 0.3125rem solid rgba(0, 0, 0, 0.9);
 }

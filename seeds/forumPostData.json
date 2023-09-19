@@ -1,3 +1,42 @@
 [
-    
+    {
+        "name": "CS:GO",
+        "description": ""
+    },
+    {
+        "name": "Legend of Zelda: Twight Princess",
+        "description": ""
+    },
+    {
+        "name": "Remnant 2",
+        "description": ""
+    },
+    {
+        "name": "Terraria",
+        "description": ""
+    },
+    {
+        "name": "Elden Ring",
+        "description": ""
+    },
+    {
+        "name": "Overwatch 2",
+        "description": ""
+    },
+    {
+        "name": "Cyberpunk 2077",
+        "description": ""
+    },
+    {
+        "name": "Borderlands 2",
+        "description": ""
+    },
+    {
+        "name": "Black Flag",
+        "description": ""
+    },
+    {
+        "name": "Realm Of The Mad God",
+        "description": ""
+    }
 ]
