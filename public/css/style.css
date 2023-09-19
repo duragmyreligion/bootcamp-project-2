@@ -385,7 +385,15 @@ form {
 
 .dropdown-item {
   border-radius: 0;
-  height: 3rem;
+  height: 3.8rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+}
+
+.dropdown-item:hover {
+  background-color: #061928;
+  color: #1be3fa;
 }
 
 .btn-secondary{
@@ -404,4 +412,10 @@ form {
   background-color:#061928;
   opacity: 0.4;
   border: 0.3125rem solid rgba(0, 0, 0, 0.9);
+}
+
+.dropdown ul li a{
+  color: rgba(27, 227, 250, 1);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
