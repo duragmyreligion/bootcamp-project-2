@@ -13,7 +13,7 @@ router.get('/', withAuth, async (req, res) => {
       ]
     });
 
-    const forums = forumData.map((forum) => forumt.get({ plain: true }));
+    const forums = forumData.map((forum) => forum.get({ plain: true }));
 
     res.render('blog_content', {
       forums,
@@ -24,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/forum/:id', withAuth, async (req, res) => {
+router.get('/blog_content/:id', withAuth, async (req, res) => {
   try {
     const forumData = await Forum.findByPk(req.params.id,{
       include: [
@@ -37,7 +37,7 @@ router.get('/forum/:id', withAuth, async (req, res) => {
 
     const forums = forumData.get({ plain: true });
 
-    res.render('forum', {
+    res.render('blog_content', {
       ...forums,
       logged_in: req.session.logged_in,
     });

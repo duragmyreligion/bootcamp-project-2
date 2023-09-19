@@ -2,6 +2,7 @@
 <a class="btn custom-button create-post" href="/blog_new_post" role="button">Create Post</a>
 {{/if}}
 
+{{#each forums as |forum| }}
 <div class="main-container"></div>
 
 <div class="dropdown">
@@ -11,4 +12,5 @@
       <li><a class="dropdown-item" href="#">{{name}}</a></li>
   </ul>
 </div>
+{{/each}}
 
