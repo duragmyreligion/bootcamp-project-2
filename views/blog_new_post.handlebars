@@ -1,32 +1,57 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+<div class="newpost-container">
+
+{{!-- <div class="welcome-msg">
+  Welcome, {{name}}!
+</div> --}}
+
+
+<div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+    <form method="POST">
+        <div class="formbold-input-flex">
+          <div>
+              <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Type title here..."
+              class="formbold-form-input"
+              />
+              <label for="firstname" class="formbold-form-label"> Title: </label>
+          </div>
+          <div>
+              <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Name of game..."
+              class="formbold-form-input"
+              />
+              <label for="lastname" class="formbold-form-label"> Name of Game: </label>
+          </div>
+        </div>
+        <div class="formbold-textarea">
+            <textarea
+                rows="10"
+                name="message"
+                id="message"
+                placeholder="Type your description..."
+                class="formbold-form-input"
+            ></textarea>
+            <label for="message" class="formbold-form-label"> Description: </label>
+        </div>
+
+        <button class="btn create-post-button">
+            Create Post
+        </button>
+    </form>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Add a new post:</h3>
 
-    <form class="form new-forum-form">
-      <div class="form-group">
-        <label for="forum-name">Title:</label>
-        <input class="form-input" type="text" id="forum-name" name="forum-name" />
-      </div>
-      <div class="form-group">
-        <label for="forum-name">Name of game:</label>
-        <input class="form-input" type="text" id="forum-name" name="forum-name" />
-      </div>
-      <div class="form-group">
-        <label for="forum-desc">Description:</label>
-        <textarea class="form-input" id="forum-desc" name="forum-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-{{#if forums.length}}
+</div>
+
+{{!-- {{#if forums.length}}
   <div class="col-md-6 forum-list">
     <h3>Current forums:</h3>
 
@@ -42,6 +67,6 @@
     {{/each}}
   </div>
   {{/if}}
-</div>
+</div> --}}
 
 <script src="./js/profile.js"></script>
