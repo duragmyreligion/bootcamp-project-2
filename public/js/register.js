@@ -6,19 +6,24 @@ const registerUser = async (event) => {
     const password = document.querySelector('#password-signup').value.trim();
 
     if (userName && email && password){
-      const response = await fetch('/api/users/register', {
+      const response = await fetch('/api/users/', {
         method: 'POST',
-        body: JSON.stringify({ userName, email, password }),
+        body: JSON.stringify({ username:'test_user', email:'chris.le74@hotmail.com' , password:'test_pass'}),
         headers: { 'Content-Type': 'application/json' },
       });
       if (response.ok) {
         document.location.replace('/');
-      }if (!response.ok) {
-        const errorMessage = await response.text(); // Get the error message from the response body
-        console.error(`HTTP Error: ${response.status} - ${errorMessage}`);
-        alert(`HTTP Error: ${response.status} - ${response.statusText}`);
+      // }if (!response.ok) {
+      //   const errorMessage = await response.text(); // Get the error message from the response body
+      //   console.error(`HTTP Error: ${response.status} - ${errorMessage}`);
+      //   alert(`HTTP Error: ${response.status} - ${response.statusText}`);
+      // } else {
+      //   alert(response.statusText);
+      // }
       } else {
-        alert(response.statusText);
+        const errorMessage = await response.json(); // Get the error message as JSONs
+        console.error(`HTTP Error: ${response.status} - ${errorMessage.message}`);
+        alert(`HTTP Error: ${response.status} - ${errorMessage.message}`);
       }
     }
   };
