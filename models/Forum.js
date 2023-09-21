@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-
 class Forum extends Model {}
-
 Forum.init(
   {
     id: {
@@ -12,6 +10,10 @@ Forum.init(
       autoIncrement: true,
     },
     name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -39,5 +41,4 @@ Forum.init(
     modelName: 'forum',
   }
 );
-
 module.exports = Forum;
