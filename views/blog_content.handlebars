@@ -9,7 +9,7 @@
     {{forum.name}}
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{forum.title}}</h5>
+    <a href="/blog_post/{{forum.id}}"><h5 class="card-title">{{forum.title}}</h5></a>
     <p class="card-text">{{forum.description}}</p>
   </div>
 </div>
@@ -21,7 +21,7 @@
 
   <ul class="dropdown-menu">
     {{#each forums as |forum| }}
-      <li><a class="dropdown-item" href="/Forum/{{forum.id}}">{{forum.name}}</a></li>
+      <li><a class="dropdown-item" href="/blog_post/{{forum.id}}">{{forum.name}}</a></li>
     {{/each}}
   </ul>
 </div>
