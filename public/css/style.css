@@ -70,10 +70,11 @@ li {
                1px 25px 50px rgba(16, 16, 16, 0.2);
   color: var(--lightblue);
   font-weight: bold;
+  left: 11rem;
 }
 .logout {
   position: relative;
-  left: 17.3rem;
+  left: 30rem;
   margin-top: 5rem;
 }
 .login {
@@ -303,6 +304,13 @@ li {
   color: #17C6DA;
   border-color: #17C6DA;
 }
+
+.home-btn{
+  position: relative;
+  margin-top: 5rem;
+  margin-left: 20rem;
+}
+
 form {
   position: relative;
   align-items: center;
@@ -331,13 +339,7 @@ form {
   background-color: #0B3B5F;
   border: 0.1rem solid #1BE3FA;
 }
-.main-container .btn{
-  background-color: #0B3B5F;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 1rem;
-}
+
 .dropdown {
   position: relative;
   top: -4.1rem;
@@ -348,10 +350,9 @@ form {
 }
 .dropdown-menu {
   border-radius: 0;
-  background-color: #0A314E;
-  opacity: 0.4;
+  background-color: rgba(10, 49, 78, 0.4);
   width: 12.5rem;
-  border: 0.3125rem solid rgba(0, 0, 0, 0.9);
+  border: 0.3125rem solid rgba(0, 0, 0, 0.4);
   height: 40.5rem;
 }
 .dropdown-item {
@@ -362,7 +363,7 @@ form {
   justify-content: flex-start;
 }
 .dropdown-item:hover {
-  background-color: #061928;
+  background-color: rgba(6, 25, 40, 0.8);
   color: #1BE3FA;
 }
 .btn-secondary{
