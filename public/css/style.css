@@ -353,15 +353,36 @@ form {
 .main-container {
   width: 65rem;
   height: 43.75rem;
-  background-color: #0a314e;
-  opacity: 0.4; 
+  background-color: rgba(10, 49, 78, 0.4);
+  /* opacity: 0.4;  */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 3%;
-  border: 0.625rem solid rgba(0, 0, 0, 0.9);
+  border: 0.625rem solid rgba(0, 0, 0, 0.4);
   z-index: -1;
+  overflow: auto;
+}
+
+.main-container .card {
+  margin: 4rem;
+  padding-bottom: 100px;
+  background-color:#061928;
+  border: 0.1rem solid #1be3fa;
+}
+
+.main-container .card-header {
+  background-color: #0b3b5f;
+  border: 0.1rem solid #1be3fa;
+}
+
+.main-container .btn{
+  background-color: #0b3b5f;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
 }
 
 .dropdown {

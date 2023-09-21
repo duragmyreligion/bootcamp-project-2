@@ -8,7 +8,7 @@ const registerUser = async (event) => {
     if (userName && email && password){
       const response = await fetch('/api/users/', {
         method: 'POST',
-        body: JSON.stringify({ username:'test_user', email:'chris.le74@hotmail.com' , password:'test_pass'}),
+        body: JSON.stringify({ name:userName, email, password}),
         headers: { 'Content-Type': 'application/json' },
       });
       if (response.ok) {
