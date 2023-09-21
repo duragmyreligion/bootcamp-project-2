@@ -14,9 +14,7 @@ const registerUser = async (event) => {
       if (response.ok) {
         document.location.replace('/');
       } else {
-        const errorMessage = await response.json(); // Get the error message as JSONs
-        console.error(`HTTP Error: ${response.status} - ${errorMessage.message}`);
-        alert(`HTTP Error: ${response.status} - ${errorMessage.message}`);
+        alert(`Failed to create user`);
       }
     }
   };

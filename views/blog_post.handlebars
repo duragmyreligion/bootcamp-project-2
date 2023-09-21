@@ -1,7 +1,10 @@
-{{#each forums as |forum|}}
-<div class="text-center forum-post">
-    <h2>{{forum.title}}</h2>
-    <p>{{forum.name}}</p>
-    <p>{{forum.description}}</p>
+<div class="card">
+  <div class="card-header">
+    {{name}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="#" class="btn btn-primary">Comment</a>
+  </div>
 </div>
-{{/each}}

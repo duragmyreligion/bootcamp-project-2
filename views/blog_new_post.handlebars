@@ -1,44 +1,36 @@
 <div class="newpost-container">
 
-{{!-- <div class="welcome-msg">
-  Welcome, {{name}}!
-</div> --}}
-
-
 <div class="formbold-main-wrapper">
   <div class="formbold-form-wrapper">
-    <form method="POST">
+    <form class="new-forum-form">
         <div class="formbold-input-flex">
           <div>
               <input
               type="text"
-              name="firstname"
-              id="firstname"
+              id="forum-title"
               placeholder="Type title here..."
               class="formbold-form-input"
               />
-              <label for="firstname" class="formbold-form-label"> Title: </label>
+              <label for="forum-title" class="formbold-form-label"> Title: </label>
           </div>
           <div>
               <input
               type="text"
-              name="lastname"
-              id="lastname"
+              id="forum-game"
               placeholder="Name of game..."
               class="formbold-form-input"
               />
-              <label for="lastname" class="formbold-form-label"> Name of Game: </label>
+              <label for="forum-game" class="formbold-form-label"> Name of Game: </label>
           </div>
         </div>
         <div class="formbold-textarea">
             <textarea
                 rows="10"
-                name="message"
-                id="message"
+                id="forum-desc"
                 placeholder="Type your description..."
                 class="formbold-form-input"
             ></textarea>
-            <label for="message" class="formbold-form-label"> Description: </label>
+            <label for="forum-desc" class="formbold-form-label"> Description: </label>
         </div>
 
         <button class="btn create-post-button">
@@ -48,25 +40,5 @@
   </div>
 </div>
 
-
 </div>
-
-{{!-- {{#if forums.length}}
-  <div class="col-md-6 forum-list">
-    <h3>Current forums:</h3>
-
-    {{#each forums as |forum|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/forum/{{forum.id}}">{{forum.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{forum.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-</div> --}}
-
-<script src="./js/profile.js"></script>
+<script src="./js/forum.js"></script>
