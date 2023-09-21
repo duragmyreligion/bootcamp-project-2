@@ -8,7 +8,7 @@
     {{forum.name}}
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{forum.title}}</h5>
+    <a href="/blog_post/{{forum.id}}"><h5 class="card-title">{{forum.title}}</h5></a>
     <p class="card-text">{{forum.description}}</p>
     <a href="#" class="btn btn-primary">Comment</a>
   </div>
@@ -19,7 +19,7 @@
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 200px;"></a>
   <ul class="dropdown-menu">
     {{#each forums as |forum| }}
-      <li><a class="dropdown-item" href="/Forum/{{forum.id}}">{{forum.name}}</a></li>
+      <li><a class="dropdown-item" href="/blog_post/{{forum.id}}">{{forum.name}}</a></li>
     {{/each}}
   </ul>
 </div>

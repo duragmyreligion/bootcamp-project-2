@@ -24,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/blog_content/:id', withAuth, async (req, res) => {
+router.get('/blog_post/:id', withAuth, async (req, res) => {
   try {
     const forumData = await Forum.findByPk(req.params.id,{
       include: [
@@ -37,7 +37,7 @@ router.get('/blog_content/:id', withAuth, async (req, res) => {
 
     const forums = forumData.get({ plain: true });
 
-    res.render('blog_content', {
+    res.render('blog_post', {
       ...forums,
       logged_in: req.session.logged_in,
     });

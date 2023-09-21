@@ -1,1 +1,7 @@
-
+{{#each forums as |forum|}}
+<div class="text-center forum-post">
+    <h2>{{forum.title}}</h2>
+    <p>{{forum.name}}</p>
+    <p>{{forum.description}}</p>
+</div>
+{{/each}}

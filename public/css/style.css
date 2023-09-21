@@ -385,3 +385,8 @@ form {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.forum-post {
+  font-size: 500px;
+  color: white;
+}
