@@ -1,21 +1,18 @@
 :root {
-  --lightblue: #1be3fa;
+  --lightblue: #1BE3FA;
   --darkblue: #061928;
-  --blue: #0b3b5f;
+  --blue: #0B3B5F;
   --grey: #606970;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 html,
 body {
   min-height: 100%;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +20,6 @@ body {
   font-size: 16px;
   color: var(--lightblue);
 }
-
 .moon {
   position: absolute;
   height: 100%;
@@ -35,22 +31,18 @@ body {
   background-color: black;
   opacity: 100%;
 }
-
 nav {
   height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 ul {
   padding: 0;
 }
-
 li {
   list-style-type: none;
 }
-
 .header-content {
   display: flex;
   position: relative;
@@ -59,7 +51,6 @@ li {
   text-align: center;
   left: 2.5rem;
 }
-
 .cerulean {
   position: relative;
   margin: 0;
@@ -67,12 +58,12 @@ li {
   font-weight: 600;
   padding-top: 5rem;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0px #12909e,
-               1px 2px 0px #12909e,
-               1px 3px 0px #12909e,
-               1px 4px 0px #12909e,
-               1px 5px 0px #12909e,
-               1px 6px 0px #12909e,
+  text-shadow: 1px 1px 0px #12909E,
+               1px 2px 0px #12909E,
+               1px 3px 0px #12909E,
+               1px 4px 0px #12909E,
+               1px 5px 0px #12909E,
+               1px 6px 0px #12909E,
                1px 10px 5px rgba(16, 16, 16, 0.5),
                1px 15px 10px rgba(16, 16, 16, 0.4),
                1px 20px 30px rgba(16, 16, 16, 0.3),
@@ -80,21 +71,18 @@ li {
   color: var(--lightblue);
   font-weight: bold;
 }
-
 .logout {
   position: relative;
   left: 17.3rem;
   margin-top: 5rem;
 }
-
 .login {
-  text-align: center; 
-  margin-top: 1.5rem; 
-  position: relative; 
-  left: 58%; 
-  transform: translateX(-50%); 
+  text-align: center;
+  margin-top: 1.5rem;
+  position: relative;
+  left: 58%;
+  transform: translateX(-50%);
 }
-
 .login-container {
   width: 400px;
   margin: 0 auto;
@@ -102,28 +90,25 @@ li {
   border-radius: 15px;
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   background-color: rgba(96, 105, 112, 0.7);
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
 }
-
 .login-header {
   text-align: center;
   margin-bottom: 1.3rem;
   margin-top: -3rem;
   font-weight: bold;
 }
-
 .register {
-  text-align: center; 
+  text-align: center;
   margin-top: 1.5rem;
-  position: relative; 
-  left: 58%; 
-  transform: translateX(-50%); 
+  position: relative;
+  left: 58%;
+  transform: translateX(-50%);
 }
-
 .register-container {
   width: 400px;
   margin: 0 auto;
@@ -131,24 +116,21 @@ li {
   border-radius: 15px;
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   background-color: rgba(96, 105, 112, 0.7);
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
 }
-
 .register-header {
   text-align: center;
   margin-bottom: 1.3rem;
   margin-top: -3rem;
   font-weight: bold;
 }
-
 .form-group {
   margin-left: -3rem;
 }
-
   .formbold-main-wrapper {
     display: flex;
     align-items: center;
@@ -156,13 +138,11 @@ li {
     padding: 48px;
     margin-top: -5rem;
   }
-
   .formbold-form-wrapper {
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
   }
-
   .formbold-input-flex {
     display: flex;
     gap: 20px;
@@ -177,7 +157,6 @@ li {
     display: flex;
     flex-direction: column-reverse;
   }
-
   .formbold-form-input {
     width: 100%;
     padding-bottom: 10px;
@@ -209,7 +188,6 @@ li {
   .formbold-form-input:focus + .formbold-form-label {
     color: var(--lightblue);
   }
-
   .formbold-input-file {
     margin-top: 30px;
   }
@@ -225,7 +203,6 @@ li {
     gap: 10px;
     position: relative;
   }
-
   .formbold-filename-wrapper {
     display: flex;
     flex-direction: column;
@@ -243,7 +220,6 @@ li {
   .formbold-filename svg {
     cursor: pointer;
   }
-
   .create-post-button {
     background-color: var(--blue);
     color: var(--lightblue);
@@ -251,13 +227,11 @@ li {
     margin-top: 2rem;
     margin-bottom: -3rem;
   }
-  
   .create-post-button:hover {
-    background-color: #0a314e;
-    color: #17c6da;
-    border-color: #17c6da;
+    background-color: #0A314E;
+    color: #17C6DA;
+    border-color: #17C6DA;
   }
-
 .newpost-container {
   width: 800px;
   margin: 0 auto;
@@ -265,11 +239,10 @@ li {
   border-radius: 15px;
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   background-color: rgba(96, 105, 112, 0.7);
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
 }
-
 .newpost-header {
   text-align: center;
   margin-bottom: 1.3rem;
@@ -277,8 +250,6 @@ li {
   font-weight: bold;
   white-space: nowrap;
 }
-
-
 .title,
 .game-name,
 .description {
@@ -287,23 +258,19 @@ li {
   margin-bottom: 1rem;
   white-space: nowrap;
 }
-
 .newpost {
-  text-align: center; 
+  text-align: center;
   margin-top: 1.5rem;
   margin-bottom: -5rem;
-  position: relative; 
-  left: 58%; 
-  transform: translateX(-50%); 
+  position: relative;
+  left: 58%;
+  transform: translateX(-50%);
 }
-
 /* .welcome-msg {
   position: relative;
   font-size: 1.2rem;
   top: -4rem;
 } */
-
-
 .email,
 .password,
 .username {
@@ -311,45 +278,35 @@ li {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 .account {
   margin-top: 2rem;
   margin-bottom: -4rem;
 }
-
 .inline-text {
   display: inline; /* Display the text inline */
   margin-right: 0.500rem; /* Add some spacing between text and link */
-  
 }
-
 .inline-link {
   display: inline; /* Display the link inline */
   text-decoration: none;
-  
 }
-
 .create-post {
   margin-left: 64rem;
 }
-
 .custom-button {
   background-color: var(--blue);
   color: var(--lightblue);
   border-color: var(--lightblue);
 }
-
 .custom-button:hover {
-  background-color: #0a314e;
-  color: #17c6da;
-  border-color: #17c6da;
+  background-color: #0A314E;
+  color: #17C6DA;
+  border-color: #17C6DA;
 }
-
 form {
   position: relative;
   align-items: center;
 }
-
 .main-container {
   width: 65rem;
   height: 43.75rem;
@@ -364,77 +321,65 @@ form {
   z-index: -1;
   overflow: auto;
 }
-
 .main-container .card {
   margin: 4rem;
   padding-bottom: 100px;
   background-color:#061928;
-  border: 0.1rem solid #1be3fa;
+  border: 0.1rem solid #1BE3FA;
 }
-
 .main-container .card-header {
-  background-color: #0b3b5f;
-  border: 0.1rem solid #1be3fa;
+  background-color: #0B3B5F;
+  border: 0.1rem solid #1BE3FA;
 }
-
 .main-container .btn{
-  background-color: #0b3b5f;
+  background-color: #0B3B5F;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 1rem;
 }
-
 .dropdown {
   position: relative;
   top: -4.1rem;
   right: 5rem;
 }
-
 .dropdown-toggle {
   border-radius: 0;
 }
-
 .dropdown-menu {
   border-radius: 0;
-  background-color: #0a314e;
+  background-color: #0A314E;
   opacity: 0.4;
   width: 12.5rem;
   border: 0.3125rem solid rgba(0, 0, 0, 0.9);
   height: 40.5rem;
 }
-
 .dropdown-item {
   border-radius: 0;
   height: 3.8rem;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
 }
-
 .dropdown-item:hover {
   background-color: #061928;
-  color: #1be3fa;
+  color: #1BE3FA;
 }
-
 .btn-secondary{
-  background-color: #0a314e;
+  background-color: #0A314E;
   opacity: 0.4;
   border: 0.3125rem solid rgba(0, 0, 0, 0.9);
 }
-
 .btn-secondary:hover{
-  background-color: #0a314e;
+  background-color: #0A314E;
   opacity: 0.4;
   border: 0.3125rem solid rgb(27, 227, 250);
 }
-
 .btn-secondary:focus{
   background-color:#061928;
   opacity: 0.4;
   border: 0.3125rem solid rgba(0, 0, 0, 0.9);
 }
-
 .dropdown ul li a{
   color: rgba(27, 227, 250, 1);
   font-size: 1.2rem;

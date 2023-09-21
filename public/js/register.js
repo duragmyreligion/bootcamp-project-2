@@ -13,13 +13,6 @@ const registerUser = async (event) => {
       });
       if (response.ok) {
         document.location.replace('/');
-      // }if (!response.ok) {
-      //   const errorMessage = await response.text(); // Get the error message from the response body
-      //   console.error(`HTTP Error: ${response.status} - ${errorMessage}`);
-      //   alert(`HTTP Error: ${response.status} - ${response.statusText}`);
-      // } else {
-      //   alert(response.statusText);
-      // }
       } else {
         const errorMessage = await response.json(); // Get the error message as JSONs
         console.error(`HTTP Error: ${response.status} - ${errorMessage.message}`);
