@@ -21,9 +21,11 @@
 
   <ul class="dropdown-menu">
     {{#each forums as |forum| }}
-      <li><a class="dropdown-item" href="/blog_post/{{forum.id}}">{{forum.name}}</a></li>
+      <li id="content"><a class="dropdown-item" href="//{{forum.id}}">{{forum.name}}</a></li>
     {{/each}}
   </ul>
 </div>
+
+{{!-- <script src="./js/refresh.js"></script> --}}
 
 

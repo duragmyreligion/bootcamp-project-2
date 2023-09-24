@@ -340,6 +340,18 @@ form {
   border: 0.1rem solid #1BE3FA;
 }
 
+.main-container .card-title {
+  color: #1BE3FA;
+}
+
+.main-container .card-title:hover {
+  color: #467ab1;
+}
+
+a {
+  text-decoration: none;
+}
+
 .dropdown {
   position: relative;
   top: -4.1rem;
@@ -391,3 +403,19 @@ form {
   font-size: 500px;
   color: white;
 }
+
+.comment {
+  padding: 0 4rem 0 4rem;
+  color: #061928;
+}
+
+.comment .form-control {
+  background-color: rgb(27, 227, 250, 0.6);
+}
+
+.del-forum-post{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
