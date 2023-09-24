@@ -3,11 +3,12 @@ const newFormHandler = async (event) => {
     const title = document.querySelector('#forum-title').value.trim();
     const name = document.querySelector('#forum-game').value.trim();
     const description = document.querySelector('#forum-desc').value.trim();
+    const comments = document.querySelector('forum-comments').value.trim();
 
-    if (title && name && description) {
+    if (title && name && description && comments) {
       const response = await fetch('/api/forums/', {
         method: 'POST',
-        body: JSON.stringify({title, name, description}),
+        body: JSON.stringify({title, name, description, comments}),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -21,26 +22,8 @@ const newFormHandler = async (event) => {
     }
   };
 
-  // const delButtonHandler = async (event) => {
-  //   if (event.target.hasAttribute('data-id')) {
-  //     const id = event.target.getAttribute('data-id');
   
-  //     const response = await fetch(`/api/forums/${id}`, {
-  //       method: 'DELETE',
-  //     });
-  
-  //     if (response.ok) {
-  //       document.location.replace('/');
-  //     } else {
-  //       alert('Failed to delete project');
-  //     }
-  //   }
-  // };
 
 document
     .querySelector('.new-forum-form')
     .addEventListener('submit', newFormHandler);
-
-// document
-//     .querySelector('.del-forum-post')
-//     .addEventListener('click', delButtonHandler);
