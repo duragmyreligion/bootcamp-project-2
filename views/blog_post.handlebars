@@ -5,7 +5,7 @@
   </div>
   <div class="card-body">
     <h5 class="card-title">{{title}}</h5>
-    <p class="card-text">{{description}}</p>
+    <p class="card-text">{{emojifyText description}}</p>
 
 </div>
 
@@ -13,10 +13,6 @@
         <button class="btn btn-sm btn-danger" data-id="{{forums}}">DELETE POST</button>
     </div>
   </div>
-
-
-
-
     {{!-- comment section --}}
     {{!-- <div class="comment mt-0">
 <div class="new-comment-form">
@@ -26,7 +22,7 @@
                     id="floatingTextarea forum-comment"
                     ></textarea>
   <label for="floatingTextarea forum-comment">Leave a comment here.</label>
-  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <div class="add-comment-button d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2 " type="submit" data-id="{{forum.id}}">Add Comment</button>
   </div>
   </div>
@@ -39,7 +35,7 @@
   <div class="card-body">
     <h2 class="blockquote-footer mt-1">{{user.name}}</h2>
     <blockquote class="blockquote mb-0">
-      <p>{{comments}}</p>
+      <p>{{emojifyText comments}}</p>
     </blockquote>
   </div>
 </div> --}}

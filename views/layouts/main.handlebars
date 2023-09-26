@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body> 
   <header>
   <section>
     <img class="moon" src="/images/background.jpg" alt="Background Image">
@@ -17,8 +17,8 @@
   <nav>
     <ul>
       <li>
-        <div class="header-content text-center">
-          <h1 class="cerulean mx-auto">Cerulean</h1>
+        <div class="header-content text-center d-flex">
+          <h1 class="cerulean">Cerulean</h1>
           {{#if logged_in}}
             <button class="btn custom-button logout" id="logout">Logout</button>
             <a class="btn custom-button home-btn" href="/" role="button">Home</a>
@@ -28,7 +28,7 @@
     </ul>
   </nav>
 </header>
-  <main class="container container-fluid mt-5">
+  <main class="container container-fluid mt-5 mx-auto">
     {{{ body }}}
   </main>
   {{#if logged_in}}

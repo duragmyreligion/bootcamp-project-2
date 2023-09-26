@@ -50,6 +50,31 @@ router.get('/blog_post/:id', withAuth, async (req, res) => {
   }
 });
 
+router.get('/blog_post/:id', withAuth, async (req, res) => {
+  console.log('getRoute');
+  try {
+    const forumData = await Forum.findByPk(req.params.id,{
+      include: [
+        {
+            model: User,
+            attributes: ['name']
+        }
+      ]
+    });
+
+
+    const forums = forumData.get({ plain: true });
+    console.log(forums.id);
+
+    res.render('blog_post', {
+      forums: forums.id,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 
 router.post('/blog_post/:id/comment', withAuth, async (req, res) => {
