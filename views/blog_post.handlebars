@@ -1,10 +1,10 @@
 <div class="main-container">
 <div class="card mb-0">
   <div class="card-header">
-    {{name}}
+    {{emojifyText name}}
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{title}}</h5>
+    <h5 class="card-title">{{emojifyText title}}</h5>
     <p class="card-text">{{emojifyText description}}</p>
 
 </div>
@@ -14,7 +14,7 @@
     </div>
   </div>
     {{!-- comment section --}}
-    <div class="comment mt-0">
+    {{!-- <div class="comment mt-0">
 <div class="new-comment-form">
     <div class="form-floating">
           <textarea class="form-control" 
@@ -27,18 +27,18 @@
   </div>
   </div>
 </div>
-</div>
+</div> --}}
 
 {{!-- displayed comments --}}
 {{!-- {{#each Comment as |comment|}} --}}
-  <div class="card pb-2">
+  {{!-- <div class="card pb-2">
   <div class="card-body">
     <h2 class="blockquote-footer mt-1">{{user.name}}</h2>
     <blockquote class="blockquote mb-0">
       <p>{{emojifyText comments}}</p>
     </blockquote>
   </div>
-</div>
+</div> --}}
 {{!-- {{/each}} --}}
 
 
@@ -46,4 +46,3 @@
 
 <script src="/js/delete_button.js"></script>
 {{!-- <script src="/js/forum.js"></script> --}}
-<script src="/js/comment.js"></script>

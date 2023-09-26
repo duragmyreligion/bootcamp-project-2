@@ -11,10 +11,10 @@
   {{#each forums as |forum|}}
   <div class="card">
   <div class="card-header">
-    {{forum.name}}
+    {{emojifyText forum.name}}
   </div>
   <div class="card-body">
-    <a href="/blog_post/{{forum.id}}"><h5 class="card-title">{{forum.title}}</h5></a>
+    <a href="/blog_post/{{forum.id}}"><h5 class="card-title">{{emojifyText forum.title}}</h5></a>
     <p class="card-text">{{emojifyText forum.description}}</p>
   </div>
 </div>
