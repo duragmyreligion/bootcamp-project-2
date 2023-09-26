@@ -1,8 +1,13 @@
-{{#if logged_in}}
+{{!-- {{#if logged_in}}
+<a class="btn custom-button create-post" href="/blog_new_post" role="button">Create Post</a>
+{{/if}} --}}
+
+<div class="main-container">
+  
+  {{#if logged_in}}
 <a class="btn custom-button create-post" href="/blog_new_post" role="button">Create Post</a>
 {{/if}}
 
-<div class="main-container">
   {{#each forums as |forum|}}
   <div class="card">
   <div class="card-header">
@@ -10,7 +15,7 @@
   </div>
   <div class="card-body">
     <a href="/blog_post/{{forum.id}}"><h5 class="card-title">{{forum.title}}</h5></a>
-    <p class="card-text">{{emoji.emojify(forum.description)}}</p>
+    <p class="card-text">{{forum.description}}</p>
   </div>
 </div>
   {{/each}}

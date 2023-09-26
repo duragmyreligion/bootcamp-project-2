@@ -1,6 +1,6 @@
-import * as emoji from 'node-emoji'
+// import * as emoji from 'node-emoji'
 
-const emoji = require('node-emoji')
+// const emoji = require('node-emoji')
 
 // const emojifyText = async(event) => {
 //  titleE = emoji.emojify(title);
@@ -10,4 +10,4 @@ const emoji = require('node-emoji')
 //     return nameE, titleE, descriptionE, commentsE
 // }
 
-module.exports = emojifyText
+// module.exports = emojifyText
