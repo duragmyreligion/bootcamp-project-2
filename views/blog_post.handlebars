@@ -13,10 +13,6 @@
         <button class="btn btn-sm btn-danger" data-id="{{forum.id}}">DELETE POST</button>
     </div>
   </div>
-
-
-
-
     {{!-- comment section --}}
     <div class="comment mt-0">
 <div class="new-comment-form">
@@ -26,7 +22,7 @@
                     id="floatingTextarea forum-comment"
                     ></textarea>
   <label for="floatingTextarea forum-comment">Leave a comment here.</label>
-  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <div class="add-comment-button d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2 " type="submit" data-id="{{forum.id}}">Add Comment</button>
   </div>
   </div>
@@ -49,5 +45,5 @@
 </div>
 
 <script src="/js/delete_button.js"></script>
-<script src="/js/forum.js"></script>
-{{!-- <script src="/js/comment.js"></script> --}}
+{{!-- <script src="/js/forum.js"></script> --}}
+<script src="/js/comment.js"></script>
