@@ -10,7 +10,7 @@
   </div>
   <div class="card-body">
     <a href="/blog_post/{{forum.id}}"><h5 class="card-title">{{forum.title}}</h5></a>
-    <p class="card-text">{{forum.description}}</p>
+    <p class="card-text">{{emoji.emojify(forum.description)}}</p>
   </div>
 </div>
   {{/each}}
@@ -26,6 +26,7 @@
   </ul>
 </div> --}}
 
+<script src="../utils/helpers.js"></script>
 {{!-- <script src="./js/refresh.js"></script> --}}
 
 
