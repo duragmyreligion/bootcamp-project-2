@@ -3,12 +3,12 @@ const newFormHandler = async (event) => {
     const title = document.querySelector('#forum-title').value.trim();
     const name = document.querySelector('#forum-game').value.trim();
     const description = document.querySelector('#forum-desc').value.trim();
-    const comments = document.querySelector('forum-comments').value.trim();
 
-    if (title && name && description && comments) {
+    
+    if (title && name && description) {
       const response = await fetch('/api/forums/', {
         method: 'POST',
-        body: JSON.stringify({title, name, description, comments}),
+        body: JSON.stringify({title, name, description}),
         headers: {
           'Content-Type': 'application/json',
         },

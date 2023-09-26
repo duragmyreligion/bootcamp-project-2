@@ -19,13 +19,13 @@
 
     {{!-- comment section --}}
     <div class="comment mt-0">
-<div class="new-forum-form">
+<div class="new-comment-form">
     <div class="form-floating">
           <textarea class="form-control" 
                     placeholder="Leave a comment here" 
-                    id="floatingTextarea forum-comments"
+                    id="floatingTextarea forum-comment"
                     ></textarea>
-  <label for="floatingTextarea forum-comments">Leave a comment here.</label>
+  <label for="floatingTextarea forum-comment">Leave a comment here.</label>
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2 " type="submit" data-id="{{forum.id}}">Add Comment</button>
   </div>
@@ -34,20 +34,20 @@
 </div>
 
 {{!-- displayed comments --}}
+{{!-- {{#each Comment as |comment|}} --}}
   <div class="card pb-2">
-  <div class="card-header">
-    {{user.name}}
-  </div>
-  <div class="card-body ">
+  <div class="card-body">
+    <h2 class="blockquote-footer mt-1">{{user.name}}</h2>
     <blockquote class="blockquote mb-0">
       <p>{{comments}}</p>
-      <footer class="blockquote-footer">{{user.name}}</footer>
     </blockquote>
   </div>
 </div>
+{{!-- {{/each}} --}}
 
 
 </div>
 
 <script src="/js/delete_button.js"></script>
 <script src="/js/forum.js"></script>
+{{!-- <script src="/js/comment.js"></script> --}}
