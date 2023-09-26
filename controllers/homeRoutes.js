@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Forum } = require('../models');
+const { User, Forum, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -36,15 +36,23 @@ router.get('/blog_post/:id', withAuth, async (req, res) => {
     });
 
     const forums = forumData.get({ plain: true });
+    // const commentData = await Comment.findByPk(req.params.id, { 
+    //   include: [{model: Comment}],
+    //   attributes: {exclude:['password']},
+    // });
+
+    // const comments = commentData.get({ plain: true });
 
     res.render('blog_post', {
       ...forums,
+      // ...comments,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
 
 router.get('/blog_new_post', withAuth, async (req, res) => {
   try {
