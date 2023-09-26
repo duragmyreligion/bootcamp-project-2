@@ -10,7 +10,7 @@
 </div>
 
     <div class=" m-2 del-forum-post">
-        <button class="btn btn-sm btn-danger" data-id="{{forum.id}}">DELETE POST</button>
+        <button class="btn btn-sm btn-danger" data-id="{{forums}}">DELETE POST</button>
     </div>
   </div>
 
@@ -18,7 +18,7 @@
 
 
     {{!-- comment section --}}
-    <div class="comment mt-0">
+    {{!-- <div class="comment mt-0">
 <div class="new-comment-form">
     <div class="form-floating">
           <textarea class="form-control" 
@@ -31,23 +31,23 @@
   </div>
   </div>
 </div>
-</div>
+</div> --}}
 
 {{!-- displayed comments --}}
 {{!-- {{#each Comment as |comment|}} --}}
-  <div class="card pb-2">
+  {{!-- <div class="card pb-2">
   <div class="card-body">
     <h2 class="blockquote-footer mt-1">{{user.name}}</h2>
     <blockquote class="blockquote mb-0">
       <p>{{comments}}</p>
     </blockquote>
   </div>
-</div>
+</div> --}}
 {{!-- {{/each}} --}}
 
 
 </div>
 
 <script src="/js/delete_button.js"></script>
-<script src="/js/forum.js"></script>
-{{!-- <script src="/js/comment.js"></script> --}}
+{{!-- <script src="/js/forum.js"></script> --}}
+<script src="/js/comment.js"></script>
