@@ -1,3 +1,7 @@
+// const emojifyText = require('../../utils/helpers')
+// const emoji = require('node-emoji')
+
+
 const newFormHandler = async (event) => {
     event.preventDefault();
     const title = document.querySelector('#forum-title').value.trim();
@@ -5,6 +9,8 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#forum-desc').value.trim();
     const comments = document.querySelector('forum-comments').value.trim();
 
+    // emojifyText(title, name, description, comments)
+    
     if (title && name && description && comments) {
       const response = await fetch('/api/forums/', {
         method: 'POST',

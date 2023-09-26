@@ -45,4 +45,6 @@ Forum.init(
     modelName: 'forum',
   }
 );
+
+
 module.exports = Forum;
