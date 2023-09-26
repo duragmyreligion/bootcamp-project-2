@@ -1,34 +1,34 @@
 const router = require('express').Router();
-const { Comments } = require('../../models');
+const { Comment } = require('../../models');
 
 router.post('/blog_post', async (req, res) => {
   try {
-    const newComments = await Comments.create({
+    const newComment = await Comment.create({
       ...req.body,
       user_id: req.session.user_id,
-    });s
+    });
 
-    res.status(200).json(newComments);
+    res.status(200).json(newComment);
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-router.delete('/blog_post:id', async (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
-    const forumData = await Comments.destroy({
+    const commentData = await Comment.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!forumData) {
+    if (!commentData) {
       res.status(404).json({ message: 'No forum post found with this id!' });
       return;
     }
 
-    res.status(200).json(forumData);
+    res.status(200).json(commentData);
   } catch (err) {
     res.status(500).json(err);
   }

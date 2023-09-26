@@ -1,18 +1,19 @@
 const newCommentHandler = async (event) => {
     event.preventDefault();
-    const comments = document.querySelector('forum-comments').value.trim();
+    const comment = document.querySelector('#forum-comment').value.trim();
 
-    if (comments) {
-      const response = await fetch('/api/forums/', {
+    
+    if (comment) {
+      const response = await fetch('/api/comments/', {
         method: 'POST',
-        body: JSON.stringify({comments}),
+        body: JSON.stringify({comment}),
         headers: {
           'Content-Type': 'application/json',
         },
       });
       console.log(response)
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/blog_post/${commentId}');
       } else {
         alert('Failed to create forum post');
       }
