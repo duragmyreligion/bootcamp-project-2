@@ -10,7 +10,7 @@ const newFormHandler = async (event) => {
 
     // emojifyText(title, name, description, comments)
     
-    if (title && name && description && comments) {
+    if (title && name && description) {
       const response = await fetch('/api/forums/', {
         method: 'POST',
         body: JSON.stringify({title, name, description}),
