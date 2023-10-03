@@ -30,7 +30,11 @@ To run locally,
 
 ## Usage
 
-This website is for gamers interested in sharing any opinions, tips or advice about any game in the world. Through creating posts about certain games it can prove very helpful to all types of gamers new or old.
+1. Login with username/password | Sign up if a new user. (can use testing email & pass, e.g. email: sal@hotmail.com password: password12345)
+2. Home button returns to home page.
+3. Clicking on title of a post takes you to that post.
+4. Create post button, enter post's title, name of game & description. Create Post button again posts it to main page.
+5. Emojis can be added to posts e.g. ":monkey:" etc.
 
 ## Credits
 
